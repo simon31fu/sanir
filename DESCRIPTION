@@ -1,11 +1,19 @@
 Package: sanir
-Type: Package
-Title: What the Package Does (Title Case)
+Title: A Package For Sanitizing Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(
+    person("Simon", "Fu", , "ximeng1@ualberta.ca", role = c("aut", "cre")),
+    person("Daniel", "Vovk", , "dvovk@ualberta.ca", role = "aut"),
+    person("Matthew", "Wile", , "wile@ualberta.ca", role = "aut")
+    )
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
 Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.0
+Imports: 
+    dplyr,
+    magrittr
+Depends: 
+    R (>= 2.10)
 LazyData: true
