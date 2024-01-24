@@ -7,15 +7,16 @@
 #' @return A sanitized vector
 #'
 #' @examples
-#' clean_col_names(smpsn)
+#' clean_col_names(column_names = colnames(sanir::smpsn), keep_special = FALSE)
 #'
 #' @export
 clean_col_names <- function(column_names, keep_special) {
-  cleaned_column <- gsub(" ", "", column_names) %>%
-    dplyr::if_else(keep_special = T, gsub("[[:punct:]]", ""))
+  cleaned_column <- gsub(" ", "", column_names) #%>%
+   # dplyr::if_else(keep_special == TRUE, gsub("[[:punct:]]", ""))
+  return(cleaned_column)
 }
-
-gsub(" ", "", c("hp", "h^")) %>%
-  +     gsub("[[:punct:]]", "", .)
+# commenting out to make sure other function runs
+# gsub(" ", "", c("hp", "h^")) %>%
+#   +     gsub("[[:punct:]]", "", .)
 # what I last put into the console, returned "hp" and "h"
 

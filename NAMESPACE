@@ -2,4 +2,7 @@
 
 export("%>%")
 export(check_non_chars)
+export(clean_col_names)
+export(colorCorrelation)
+import(tibble)
 importFrom(magrittr,"%>%")
