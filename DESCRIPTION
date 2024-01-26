@@ -16,7 +16,11 @@ Imports:
     ggplot2,
     magrittr,
     plotly,
-    tibble
+    tibble,
+    stringr,
+    dplyr,
+    tidyr,
+    tidyquant
 Depends: 
     R (>= 2.10)
 LazyData: true
