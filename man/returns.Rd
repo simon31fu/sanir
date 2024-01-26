@@ -15,7 +15,7 @@ returns(ticker, date)
 A plotly graph of returns
 }
 \description{
-This function takes a long dataframe as input and returns the position of these variables
+This function takes a stock ticker and finds daily returns from a specified date
 }
 \examples{
 returns <- aapl
